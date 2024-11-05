@@ -87,7 +87,7 @@ function Graph() {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2 bg-white p-6 border border-gray-300 flex items-center justify-center" // Removed shadow and rounded corners
         >
-          <div className="w-full h-80 cursor-pointer"> {/* Change cursor on hover */}
+          <div className="w-full h-85 cursor-pointer"> {/* Change cursor on hover */}
             <h3 className="text-2xl font-bold mb-8 text-center">Student Participation Graph</h3> {/* Graph title */}
             <Pie
               data={studentsChartData}

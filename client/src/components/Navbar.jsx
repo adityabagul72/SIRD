@@ -58,7 +58,7 @@ function Navbar() {
                 </div>
                 
                 {/* Desktop Menu */}
-                <div className="font-semibold ml-[400px] navbar-center hidden lg:flex">
+                <div className="font-semibold ml-[600px] navbar-center hidden lg:flex gap-15">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/academics"><span className='hover:text-blue-500'>Academics & Research</span></Link></li>
                         <li>

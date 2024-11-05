@@ -14,6 +14,8 @@ function Navbar() {
     }, []);
 
     return (
+        <>
+        
         <div ref={navbarRef} className="fixed top-0 left-0 w-full bg-base-100 shadow-md z-50 font-poppins">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
@@ -58,7 +60,8 @@ function Navbar() {
                 </div>
                 
                 {/* Desktop Menu */}
-                <div className="font-semibold ml-[600px] navbar-center hidden lg:flex gap-15">
+                <div>
+                <div className="font-semibold navbar-center hidden lg:flex gap-4">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/academics"><span className='hover:text-blue-500'>Academics & Research</span></Link></li>
                         <li>
@@ -81,6 +84,9 @@ function Navbar() {
                 </div>
             </div>
         </div>
+        </div>
+        </>
+        
     );
 }
 

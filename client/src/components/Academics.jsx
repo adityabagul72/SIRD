@@ -27,14 +27,14 @@ function Academics() {
   return (
     <>
       <Navbar />
-      <div className="mt-24 px-4">
+      <div className="mt-24 px-4 flex flex-col items-center">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Academic Programs & Collaborations</h2>
 
         {/* Carousel Section with Two Images per Item */}
-        <div className="py-1 md:ml-10 carousel carousel-center rounded-box max-w-6xl mx-auto mb-10 border-[1px] border-gray-200">
+        <div className="py-1 carousel carousel-center rounded-box max-w-6xl mx-auto mb-10 border-[1px] border-gray-200">
           {programs.map((program, index) => (
             <div key={index} className="carousel-item w-full flex justify-center">
-              <div className="flex flex-col sm:flex-row gap-4 p-4"> {/* Add padding for spacing */}
+              <div className="flex flex-col sm:flex-row gap-4 p-4 items-center justify-center"> {/* Centering Images */}
                 {/* First Image */}
                 <img
                   src={program.image1}
@@ -52,7 +52,7 @@ function Academics() {
           ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
